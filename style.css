@@ -345,6 +345,14 @@ header.scrolled {
     color: var(--text-light);
 }
 
+/* ========================================
+   Catégories Menu - Titres centrés
+   ======================================== */
+.menu-category {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .category-title {
     font-size: 1.8rem;
     color: var(--primary-color);
@@ -354,7 +362,6 @@ header.scrolled {
     padding-bottom: 10px;
     display: inline-block;
     text-align: center;
-    width: 100%;
 }
 
 .category-title i {
@@ -374,7 +381,6 @@ header.scrolled {
     gap: 25px;
     margin-bottom: 50px;
     width: 100%;
-    justify-items: center;
 }
 
 .service-card {
@@ -436,14 +442,31 @@ header.scrolled {
 }
 
 /* ========================================
-   Grille Menu - Centrée
+   Grille Menu - Parfaitement centrée
    ======================================== */
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     width: 100%;
-    justify-items: center;
+    justify-content: center;
+}
+
+/* Grille pour 4 éléments (Viandes & Grillades) */
+.menu-grid-four {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Grille pour 2 éléments (Burgers, Boissons) */
+.menu-grid-two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
     justify-content: center;
 }
 
@@ -456,7 +479,7 @@ header.scrolled {
                 box-shadow var(--transition-speed);
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 0 1 400px;
     max-width: 450px;
 }
 
@@ -559,7 +582,6 @@ header.scrolled {
     margin-top: 60px;
     text-align: left;
     width: 100%;
-    justify-items: center;
 }
 
 .about-detail {
@@ -612,7 +634,6 @@ header.scrolled {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
-    justify-items: center;
 }
 
 .gallery-item {
@@ -650,7 +671,6 @@ header.scrolled {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
-    justify-items: center;
 }
 
 .review-card {
@@ -875,8 +895,8 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .menu-grid {
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    .menu-card {
+        flex: 0 1 350px;
     }
 }
 
@@ -910,8 +930,8 @@ footer {
         padding: 40px;
     }
 
-    .menu-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    .menu-card {
+        flex: 0 1 320px;
     }
 }
 
@@ -972,12 +992,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .menu-grid {
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-
     .menu-card {
+        flex: 0 1 300px;
         max-width: 100%;
     }
 
@@ -1019,12 +1035,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .menu-grid {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
     .menu-card {
+        flex: 0 1 100%;
         max-width: 100%;
     }
 
