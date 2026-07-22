@@ -1,7 +1,6 @@
 /**
  * Steak House MK Restaurant
  * Gestion interactive du site
- * Version optimisée avec délégation d'événements et performance améliorée
  */
 (function () {
     'use strict';
@@ -19,8 +18,6 @@
 
         initMobileMenu();
         initScrollEffect();
-        initSmoothScroll();
-
         console.log('Steak House MK Restaurant - Script chargé avec succès !');
     }
 
@@ -31,9 +28,7 @@
 
         DOM.navLinks.addEventListener('click', (event) => {
             const link = event.target.closest('a');
-            if (link) {
-                closeMobileMenu();
-            }
+            if (link) closeMobileMenu();
         });
 
         document.addEventListener('keydown', (event) => {
@@ -59,7 +54,6 @@
     function updateMenuIcon(isActive) {
         const icon = DOM.mobileMenu.querySelector('i');
         if (!icon) return;
-
         if (isActive) {
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-xmark');
@@ -71,30 +65,20 @@
 
     function initScrollEffect() {
         if (!DOM.header) return;
-
         let ticking = false;
         const SCROLL_THRESHOLD = 50;
 
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
-                    updateHeaderState(SCROLL_THRESHOLD);
+                    DOM.header.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
                     ticking = false;
                 });
                 ticking = true;
             }
         }, { passive: true });
 
-        updateHeaderState(SCROLL_THRESHOLD);
-    }
-
-    function updateHeaderState(threshold) {
-        const shouldBeScrolled = window.scrollY > threshold;
-        DOM.header.classList.toggle('scrolled', shouldBeScrolled);
-    }
-
-    function initSmoothScroll() {
-        // Support natif via CSS scroll-behavior
+        DOM.header.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
     }
 
     if (document.readyState === 'loading') {
@@ -102,5 +86,4 @@
     } else {
         init();
     }
-
 })();
