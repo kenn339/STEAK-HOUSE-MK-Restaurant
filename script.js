@@ -6,23 +6,17 @@
 (function () {
     'use strict';
 
-    // Cache des éléments DOM fréquemment utilisés
     const DOM = {
         header: null,
         mobileMenu: null,
         navLinks: null,
     };
 
-    /**
-     * Initialisation au chargement du DOM
-     */
     function init() {
-        // Cache des éléments
         DOM.header = document.getElementById('header');
         DOM.mobileMenu = document.getElementById('mobileMenu');
         DOM.navLinks = document.getElementById('navLinks');
 
-        // Initialisation des modules
         initMobileMenu();
         initScrollEffect();
         initSmoothScroll();
@@ -30,9 +24,6 @@
         console.log('Steak House MK Restaurant - Script chargé avec succès !');
     }
 
-    /**
-     * 1. Gestion du menu mobile hamburger
-     */
     function initMobileMenu() {
         if (!DOM.mobileMenu || !DOM.navLinks) return;
 
@@ -78,9 +69,6 @@
         }
     }
 
-    /**
-     * 2. Effet header au scroll
-     */
     function initScrollEffect() {
         if (!DOM.header) return;
 
@@ -105,14 +93,10 @@
         DOM.header.classList.toggle('scrolled', shouldBeScrolled);
     }
 
-    /**
-     * 3. Défilement fluide
-     */
     function initSmoothScroll() {
         // Support natif via CSS scroll-behavior
     }
 
-    // Démarrage
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
