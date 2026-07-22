@@ -1,6 +1,5 @@
 /* ========================================
    Steak House MK Restaurant - Style Principal
-   Variables et Reset
    ======================================== */
 :root {
     --primary-color: #8B0000;
@@ -65,7 +64,7 @@ a {
 }
 
 /* ========================================
-   Structure
+   Structure 100% largeur
    ======================================== */
 .section-full {
     width: 100%;
@@ -96,7 +95,7 @@ a {
 }
 
 /* ========================================
-   Header & Navigation
+   Header - Répartition logique sur toute la largeur
    ======================================== */
 header {
     background-color: var(--dark-color);
@@ -117,9 +116,8 @@ header.scrolled {
 
 .nav-container-full {
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 5%;
+    max-width: 100%;
+    padding: 0 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,12 +125,13 @@ header.scrolled {
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--white);
     text-decoration: none;
     white-space: nowrap;
     transition: color var(--transition-speed);
     letter-spacing: 0.5px;
+    flex: 0 0 auto;
 }
 
 .logo:hover {
@@ -143,10 +142,18 @@ header.scrolled {
     color: var(--accent-color);
 }
 
+/* Navigation centrée */
+.nav-center {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    justify-content: center;
 }
 
 .nav-links a {
@@ -156,6 +163,7 @@ header.scrolled {
     position: relative;
     transition: color var(--transition-speed);
     padding: 5px 0;
+    font-size: 0.95rem;
 }
 
 .nav-links a::after {
@@ -183,11 +191,13 @@ header.scrolled {
 .btn-cta {
     background: var(--primary-color);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 10px 18px;
     border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 600;
     white-space: nowrap;
+    font-size: 0.9rem;
+    flex: 0 0 auto;
     transition: background-color var(--transition-speed),
                 transform var(--transition-speed);
 }
@@ -198,7 +208,7 @@ header.scrolled {
 }
 
 .btn-cta i {
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 .menu-toggle {
@@ -210,6 +220,7 @@ header.scrolled {
     border: none;
     padding: 8px;
     transition: color var(--transition-speed);
+    flex: 0 0 auto;
 }
 
 .menu-toggle:hover {
@@ -217,13 +228,13 @@ header.scrolled {
 }
 
 /* ========================================
-   Hero Section
+   Hero Section - 100% largeur
    ======================================== */
 .hero {
     width: 100%;
     min-height: calc(100vh - var(--header-height));
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1920&q=80')
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+                url('https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/aomsbuel/5fc7d65e-72fd-46ee-ab1d-3c3fd92c3550.jpeg')
                 no-repeat center center / cover;
     background-attachment: fixed;
     display: flex;
@@ -237,6 +248,8 @@ header.scrolled {
 
 .hero-content {
     animation: fadeInUp 0.8s ease-out;
+    width: 100%;
+    max-width: 900px;
 }
 
 .hero-content h2 {
@@ -306,29 +319,7 @@ header.scrolled {
     transform: translateY(-2px);
 }
 
-.btn-whatsapp {
-    background: var(--whatsapp-color);
-    color: var(--white);
-    padding: 14px 32px;
-    border-radius: var(--radius-sm);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: opacity var(--transition-speed),
-                transform var(--transition-speed);
-}
-
-.btn-whatsapp:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
 .contact-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     margin-top: 25px;
 }
 
@@ -397,6 +388,7 @@ header.scrolled {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .service-card {
@@ -440,6 +432,7 @@ header.scrolled {
     border: 1px solid var(--accent-color);
     border-radius: var(--radius-md);
     padding: 25px;
+    width: 100%;
 }
 
 .highlight-item {
@@ -573,6 +566,7 @@ header.scrolled {
     gap: 30px;
     margin-top: 50px;
     text-align: left;
+    width: 100%;
 }
 
 .about-detail {
@@ -623,6 +617,7 @@ header.scrolled {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    width: 100%;
 }
 
 .gallery-item {
@@ -656,15 +651,15 @@ header.scrolled {
    ======================================== */
 .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
     width: 100%;
 }
 
 .review-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 35px;
+    padding: 30px;
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
@@ -681,22 +676,28 @@ header.scrolled {
 .stars {
     color: var(--accent-color);
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .review-text p {
     font-style: italic;
     color: var(--text-muted);
-    margin-bottom: 25px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .review-author {
     font-weight: 600;
     color: var(--accent-color);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: right;
     font-style: normal;
+}
+
+.reviews-cta {
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* ========================================
@@ -862,6 +863,18 @@ footer {
 /* ========================================
    Responsive Design
    ======================================== */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 18px;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 900px) {
     .contact-grid-full {
         grid-template-columns: 1fr;
@@ -882,6 +895,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-center {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
     }
@@ -898,6 +915,7 @@ footer {
         text-align: center;
         gap: 20px;
         box-shadow: var(--shadow-md);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -912,17 +930,21 @@ footer {
         display: none;
     }
 
+    .nav-container-full {
+        justify-content: space-between;
+    }
+
     .hero {
         min-height: 90vh;
         background-attachment: scroll;
     }
 
     .hero-content h2 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .section-full {
-        padding: 60px 5%;
+        padding: 60px 4%;
     }
 
     .info-highlights {
@@ -932,6 +954,10 @@ footer {
 
     .highlight-item {
         justify-content: center;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     .footer-container-full {
@@ -971,13 +997,16 @@ footer {
         padding: 25px;
     }
 
-    .contact-buttons .btn-primary,
-    .contact-buttons .btn-whatsapp {
+    .contact-buttons .btn-primary {
         width: 100%;
         justify-content: center;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .section-full {
+        padding: 50px 4%;
     }
 }
