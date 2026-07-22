@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Steak House MK Restaurant - Le meilleur de la viande grillée à Abomey-Calavi / Cotonou. Découvrez nos steaks, burgers et grillades au feu de bois.">
-    <title>Steak House MK | Restaurant Grillade Cotonou</title>
+    <meta name="description" content="Steak House MK Restaurant - Le meilleur de la viande grillée à Abomey-Calavi / Cotonou. Service à table, vente à emporter, traiteur. Entrecôtes, burgers gourmets et grillades au feu de bois.">
+    <meta name="keywords" content="steak house, restaurant Cotonou, grillade Abomey-Calavi, viande grillée Bénin, burger Cotonou, traiteur">
+    <meta name="author" content="Steak House MK Restaurant">
+    <meta name="geo.region" content="BJ">
+    <meta name="geo.placename" content="Abomey-Calavi">
+    <meta name="geo.position" content="6.4408131;2.3456158">
+    <meta name="ICBM" content="6.4408131, 2.3456158">
 
-    <!-- Préchargement des polices pour optimisation -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Steak House MK Restaurant | Grillade Abomey-Calavi Cotonou">
+    <meta property="og:description" content="L'excellence de la viande grillée. Service à table, vente à emporter, traiteur. Ambiance décontractée et branchée.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="fr_BJ">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmIIic8XXnHEH_m-86AZP7JbqgJO95hY8USmvQJ930_ze_oQfjvYpWCflwDWkHawpbeB6z8rZZdDlB4aDgy7RMVXg_WgkDejPAksFwgzhxMjCEqtfIJ68ZQ-_uDTnWWbHoPHES_I8yKPZpF=w408-h306-k-no">
+
+    <title>Steak House MK | Restaurant Grillade Abomey-Calavi - Cotonou</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,7 +31,7 @@
     <!-- En-tête / Navigation -->
     <header id="header" role="banner">
         <div class="nav-container-full">
-            <a href="#accueil" class="logo" aria-label="Steak House MK - Accueil">
+            <a href="#accueil" class="logo" aria-label="Steak House MK - Retour à l'accueil">
                 Steak House <span>MK</span>
             </a>
             <nav role="navigation" aria-label="Navigation principale">
@@ -26,12 +39,13 @@
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
                     <li><a href="#avis">Avis Clients</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/22901020304" target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Réserver via WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i> Réserver
+            <a href="https://wa.me/22901020304" target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Réserver une table via WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Réserver
             </a>
             <button class="menu-toggle" id="mobileMenu" aria-label="Menu de navigation" aria-expanded="false">
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -44,12 +58,56 @@
         <section id="accueil" class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <h2 id="hero-title">L'excellence de la viande à l'honneur</h2>
-                <p>Découvrez des steaks tendres, juteux et savoureux, grillés à la perfection chez Steak House MK.</p>
+                <p>Découvrez des steaks tendres, juteux et savoureux, grillés à la perfection chez Steak House MK à Abomey-Calavi.</p>
                 <div class="hero-buttons">
                     <a href="#menu" class="btn-primary">Voir notre carte</a>
                     <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                        <i class="fa-brands fa-tripadvisor" aria-hidden="true"></i> Voir sur TripAdvisor
+                        <i class="fa-brands fa-tripadvisor" aria-hidden="true"></i> Avis TripAdvisor
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services (nouvelle) -->
+        <section id="services" class="section-full bg-dark-alt" aria-labelledby="services-title">
+            <div class="content-wrapper">
+                <h2 id="services-title" class="section-title text-gold">Nos Services</h2>
+                <p class="section-subtitle">Tout ce que nous mettons à votre disposition pour une expérience inoubliable</p>
+
+                <div class="services-grid">
+                    <!-- Services disponibles -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                        <h3>Repas sur place</h3>
+                        <p>Savourez nos plats dans notre cadre agréable, calme et branché.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                        <h3>Vente à emporter</h3>
+                        <p>Commandez et emportez vos plats préférés où que vous soyez.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-truck" aria-hidden="true"></i>
+                        <h3>Service Traiteur</h3>
+                        <p>Nous assurons vos événements : anniversaires, séminaires, mariages.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                        <h3>Réservations acceptées</h3>
+                        <p>Réservez votre table par téléphone ou WhatsApp en toute simplicité.</p>
+                    </div>
+                </div>
+
+                <!-- Horaires et populaires -->
+                <div class="info-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                        <span><strong>Populaire pour :</strong> Déjeuner • Dîner • Dîner en solo</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        <span><strong>Horaires :</strong> Mardi - Dimanche : 12h00 - 23h00 (Fermé le Lundi)</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,12 +118,12 @@
                 <h2 id="menu-title" class="section-title">Notre Carte Complète</h2>
                 <p class="section-subtitle">Des viandes d'exception, des grillades authentiques et des accompagnements savoureux</p>
 
-                <!-- Entrées -->
+                <!-- Entrées & Tapas -->
                 <h3 class="category-title"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Entrées & Tapas</h3>
                 <div class="menu-grid">
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80" alt="Planche de charcuterie fine" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80" alt="Planche de charcuterie fine avec viandes séchées et cornichons" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -77,7 +135,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=600&q=80" alt="Salade César au poulet grillé" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=600&q=80" alt="Salade César au poulet grillé, parmesan et sauce maison" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -89,12 +147,12 @@
                     </article>
                 </div>
 
-                <!-- Viandes & Grillades -->
+                <!-- Viandes & Grillades au Feu de Bois -->
                 <h3 class="category-title"><i class="fa-solid fa-fire" aria-hidden="true"></i> Viandes & Grillades au Feu de Bois</h3>
                 <div class="menu-grid">
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Entrecôte grillée" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Entrecôte grillée avec frites maison et sauce secrète MK" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -106,7 +164,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=600&q=80" alt="Côte de bœuf pour deux" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=600&q=80" alt="Côte de bœuf maturée grillée au feu de bois pour deux personnes" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -118,7 +176,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Brochettes de bœuf épicées" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Brochettes de bœuf épicées marinées aux épices maison" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -130,7 +188,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Pavé de rumsteak" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Pavé de rumsteak tendre et juteux avec purée de patates douces" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -142,12 +200,12 @@
                     </article>
                 </div>
 
-                <!-- Burgers -->
+                <!-- Burgers Gourmets -->
                 <h3 class="category-title"><i class="fa-solid fa-burger" aria-hidden="true"></i> Burgers Gourmets</h3>
                 <div class="menu-grid">
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger Gourmet MK" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger Gourmet MK avec steak épais, cheddar et bacon croustillant" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -159,7 +217,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="The Monster Steak Burger" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="The Monster Steak Burger double steak double cheddar" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -171,12 +229,12 @@
                     </article>
                 </div>
 
-                <!-- Boissons -->
+                <!-- Boissons & Cocktails -->
                 <h3 class="category-title"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i> Boissons & Cocktails</h3>
                 <div class="menu-grid">
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Cocktail Signature MK" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Cocktail Signature MK aux fruits tropicaux" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -188,7 +246,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80" alt="Jus de Bissap ou Gingembre" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80" alt="Jus de Bissap et Gingembre frais maison glacé" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -199,23 +257,89 @@
                         </div>
                     </article>
                 </div>
+
+                <!-- Offres spéciales -->
+                <div class="menu-offers">
+                    <span class="offer-badge"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Petites portions à partager</span>
+                    <span class="offer-badge"><i class="fa-solid fa-person-walking" aria-hidden="true"></i> Restauration sur le pouce</span>
+                </div>
             </div>
         </section>
 
-        <!-- Section À propos -->
+        <!-- Section À propos (enrichie) -->
         <section id="apropos" class="section-full bg-dark-alt" aria-labelledby="about-title">
             <div class="content-wrapper text-center">
                 <h2 id="about-title" class="section-title text-gold">Notre Histoire & Philosophie</h2>
                 <p class="about-desc">Bienvenue au <strong>Steak House MK Restaurant</strong>, situé à Abomey-Calavi / Cotonou. Notre mission est simple : offrir aux amateurs de bonne viande une expérience culinaire inoubliable. Chaque pièce de bœuf est sélectionnée avec soin pour sa tendreté et sa richesse en goût, puis préparée par nos chefs passionnés.</p>
                 <p class="about-desc">Que ce soit pour un dîner en amoureux, un repas d'affaires ou une sortie entre amis, notre cadre chaleureux vous garantit un moment d'exception.</p>
+
+                <!-- Ambiance et clientèle -->
+                <div class="about-details-grid">
+                    <div class="about-detail">
+                        <h3 class="text-gold"><i class="fa-solid fa-martini-glass" aria-hidden="true"></i> Ambiance</h3>
+                        <ul>
+                            <li>Ambiance décontractée</li>
+                            <li>Branché</li>
+                            <li>Cadre agréable</li>
+                            <li>Calme</li>
+                        </ul>
+                    </div>
+                    <div class="about-detail">
+                        <h3 class="text-gold"><i class="fa-solid fa-users" aria-hidden="true"></i> Clientèle</h3>
+                        <ul>
+                            <li>Étudiants bienvenus</li>
+                            <li>Groupes acceptés</li>
+                            <li>Touristes</li>
+                            <li>Convient aux enfants</li>
+                        </ul>
+                    </div>
+                    <div class="about-detail">
+                        <h3 class="text-gold"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Confort</h3>
+                        <ul>
+                            <li>Toilettes disponibles</li>
+                            <li>Parking gratuit</li>
+                            <li>Parking gratuit dans la rue</li>
+                            <li>Service à table</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Galerie Photos (nouvelle avec images Google) -->
+        <section id="galerie" class="section-full bg-light" aria-labelledby="gallery-title">
+            <div class="content-wrapper">
+                <h2 id="gallery-title" class="section-title">Galerie Photos</h2>
+                <p class="section-subtitle">Découvrez l'ambiance et les plats de notre restaurant</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnqMgtT0GK6YCyn7YBylJ5FuYfplH7iH4rlclOLs_tLEPQNOqUxY4Q6qJDBhoNEcNakd7Gsdz8UFHO65Q_srGlGI-GyZ5zEM7PlYURknBUE-JSpT2La1Xay_Cqp0gCHsXlMV3Xftf1aP3c=w408-h306-k-no" alt="Steak House MK Restaurant - Ambiance" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmN8Vt7z47v-Iu3v3nkNyo3AICMfXinNgx0WfZ6194sFQ4d-5hdC2H59E-SeVgJA1Ct7XpW56w9e3MobCEBHZbtoEzZVLC5thWXrP6Lcvmxt_ZuP3sk-toBxP9-TakFjccQRiEpLIj_Aid6=w408-h306-k-no" alt="Steak House MK Restaurant - Plat" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl76LzW0lCLKY2IufLaNbrhT1ldetjRUj_4G9RTI3eAYZtkI5N98U-QyCirj1wgftcI91yrGw44CyfgITc3yimfJCvgLoSSTGOMSxtKJt-h0-mtMKiQzD0h4PRN52OnGR2DGEqcoKH4XkYt=w408-h306-k-no" alt="Steak House MK Restaurant - Grillade" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmhSEllijrPQ0FRO9bcR0HyKjKaGwioW1uNDLaFECzo8pXBKW-wa5l8P5YeJgVHaM5yNayP1qDDsRVQgJBHxZswIw_UZ04N0y7Kg-H2sM-uRMtbPgbS9I1j8Ul2dqcqGf2b4pecYpNhhoc=w408-h306-k-no" alt="Steak House MK Restaurant - Service" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnxRHMOx7mz3_FA02u54R7kaHAXDvReL5V_gr0DoXIUz4myGiyvtwdUuKUJdxHbxNL2VdSijGitP3ElX3V7hKnWwLlMHvqdi3WpVd6tiwodhav_7BA1vuHFHy_B7T9czjCiwx_6Kza_aVze=w408-h306-k-no" alt="Steak House MK Restaurant - Intérieur" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnETsACSRX5_tqmlEblBosiC8lsRdyah3jDDICto5NYs5R4LePiCkVdJuh9czIbb4mVlr0tjQkMGsIFGNBDLQ_hKCVPYJMaq9Zif49WIv8E44u9NM0H47AnNcWpLKyabeqQLO2EswHa4jox=w408-h306-k-no" alt="Steak House MK Restaurant - Salle" loading="lazy" width="408" height="306">
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Section Avis Clients -->
-        <section id="avis" class="section-full bg-light" aria-labelledby="reviews-title">
+        <section id="avis" class="section-full bg-dark-alt" aria-labelledby="reviews-title">
             <div class="content-wrapper">
-                <h2 id="reviews-title" class="section-title">Avis Google & Témoignages</h2>
-                <p class="section-subtitle">Ce que nos clients disent de nous sur Google Maps et les plateformes</p>
+                <h2 id="reviews-title" class="section-title text-gold">Avis Google & Témoignages</h2>
+                <p class="section-subtitle">Ce que nos clients disent de nous sur Google Maps et TripAdvisor</p>
 
                 <div class="reviews-grid">
                     <article class="review-card">
@@ -263,33 +387,60 @@
             </div>
         </section>
 
-        <!-- Section Contact -->
-        <section id="contact" class="section-full" aria-labelledby="contact-title">
+        <!-- Section Contact avec Google Maps officiel -->
+        <section id="contact" class="section-full bg-light" aria-labelledby="contact-title">
             <div class="content-wrapper">
                 <h2 id="contact-title" class="section-title">Où nous trouver ?</h2>
-                <p class="section-subtitle">Venez nous rendre visite ou réservez votre table en un clic</p>
+                <p class="section-subtitle">Venez nous rendre visite à Abomey-Calavi ou réservez votre table</p>
 
                 <div class="contact-grid-full">
                     <div class="contact-info">
                         <h3>Informations Pratiques</h3>
                         <address>
-                            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Adresse :</strong> Abomey-Calavi / Cotonou</p>
-                            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Téléphone :</strong> <a href="tel:+22901020304">+229 01 02 03 04</a></p>
-                            <p><i class="fa-solid fa-clock" aria-hidden="true"></i> <strong>Horaires :</strong><br>Mardi - Dimanche : 12h00 - 23h00<br>Fermé le Lundi</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <strong>Adresse :</strong> Abomey-Calavi / Cotonou
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                <strong>Téléphone :</strong> <a href="tel:+22901020304">+229 01 02 03 04</a>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                <strong>Horaires d'ouverture :</strong><br>
+                                Mardi - Dimanche : 12h00 - 23h00<br>
+                                <em>Fermé le Lundi</em>
+                            </p>
                         </address>
-                        <a href="tel:+22901020304" class="btn-primary">Appeler maintenant</a>
+
+                        <!-- Services rapides -->
+                        <div class="contact-services">
+                            <span class="service-tag"><i class="fa-solid fa-car" aria-hidden="true"></i> Parking gratuit</span>
+                            <span class="service-tag"><i class="fa-solid fa-wifi" aria-hidden="true"></i> Service à table</span>
+                            <span class="service-tag"><i class="fa-solid fa-child" aria-hidden="true"></i> Convient aux enfants</span>
+                            <span class="service-tag"><i class="fa-solid fa-restroom" aria-hidden="true"></i> Toilettes</span>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <a href="tel:+22901020304" class="btn-primary">
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i> Appeler maintenant
+                            </a>
+                            <a href="https://wa.me/22901020304" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Réserver par WhatsApp
+                            </a>
+                        </div>
                     </div>
                     <div class="map-container-full">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2530514936357!2d2.3533!3d6.4523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjcnMDguMyJOIDLCsDIxJzExLjkiRQ!5e0!3m2!1sfr!2sbj!4v1620000000000!5m2!1sfr!2sbj"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6356451165925!2d2.3430408759155084!3d6.440813093550479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a985d9e8b567%3A0xed75a1e410318105!2sSTEAK%20HOUSE%20MK%20RESTAURANT!5e0!3m2!1sfr!2sbj!4v1784728298821!5m2!1sfr!2sbj"
                             width="600"
                             height="450"
                             style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Localisation du Steak House MK Restaurant"
-                            aria-label="Carte Google Maps du restaurant">
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Localisation du Steak House MK Restaurant à Abomey-Calavi"
+                            aria-label="Carte Google Maps du Steak House MK Restaurant">
                         </iframe>
                     </div>
                 </div>
@@ -300,7 +451,10 @@
     <!-- Pied de page -->
     <footer role="contentinfo">
         <div class="footer-container-full">
-            <p>&copy; 2026 Steak House MK Restaurant. Tous droits réservés.</p>
+            <div class="footer-info">
+                <p>&copy; 2026 Steak House MK Restaurant. Tous droits réservés.</p>
+                <p class="footer-location">Abomey-Calavi / Cotonou — Bénin</p>
+            </div>
             <nav class="social-icons" aria-label="Réseaux sociaux">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Suivez-nous sur Facebook">
                     <i class="fa-brands fa-facebook" aria-hidden="true"></i>
