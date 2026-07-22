@@ -63,16 +63,16 @@ a {
 }
 
 /* ========================================
-   Structure 100% largeur
+   Structure - Sections élargies
    ======================================== */
 .section-full {
     width: 100%;
-    padding: 90px 5%;
+    padding: 100px 3%;
 }
 
 .content-wrapper {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -131,7 +131,6 @@ header.scrolled {
     transition: color var(--transition-speed);
     letter-spacing: 0.5px;
     flex: 0 0 auto;
-    margin-right: auto;
 }
 
 .logo:hover {
@@ -142,7 +141,6 @@ header.scrolled {
     color: var(--accent-color);
 }
 
-/* Navigation à droite */
 .nav-right {
     flex: 0 0 auto;
     display: flex;
@@ -152,7 +150,7 @@ header.scrolled {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -206,7 +204,7 @@ header.scrolled {
 }
 
 /* ========================================
-   Hero Section - 100% largeur
+   Hero Section
    ======================================== */
 .hero {
     width: 100%;
@@ -220,28 +218,28 @@ header.scrolled {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    padding: 0 5%;
+    padding: 0 3%;
     margin-top: var(--header-height);
 }
 
 .hero-content {
     animation: fadeInUp 0.8s ease-out;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .hero-content h2 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     margin-bottom: 20px;
     color: var(--accent-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
     margin-bottom: 30px;
     font-weight: 300;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -259,13 +257,14 @@ header.scrolled {
 .btn-primary {
     background: var(--accent-color);
     color: var(--dark-color);
-    padding: 14px 32px;
+    padding: 16px 36px;
     border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    font-size: 1rem;
     transition: opacity var(--transition-speed),
                 transform var(--transition-speed);
 }
@@ -279,13 +278,14 @@ header.scrolled {
     background: transparent;
     border: 2px solid var(--white);
     color: var(--white);
-    padding: 14px 32px;
+    padding: 16px 36px;
     border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    font-size: 1rem;
     transition: background-color var(--transition-speed),
                 color var(--transition-speed),
                 transform var(--transition-speed);
@@ -301,12 +301,17 @@ header.scrolled {
     margin-top: 25px;
 }
 
+.contact-buttons .btn-primary {
+    width: 100%;
+    justify-content: center;
+}
+
 /* ========================================
    Titres de Sections
    ======================================== */
 .section-title {
     text-align: center;
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--dark-color);
     margin-bottom: 10px;
     position: relative;
@@ -329,7 +334,10 @@ header.scrolled {
     text-align: center;
     color: var(--text-muted);
     margin-bottom: 50px;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bg-dark-alt .section-subtitle {
@@ -341,17 +349,17 @@ header.scrolled {
 }
 
 .category-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
-    margin-bottom: 25px;
-    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-top: 70px;
     border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     display: inline-block;
 }
 
 .category-title i {
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .category-title:first-of-type {
@@ -363,9 +371,9 @@ header.scrolled {
    ======================================== */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-bottom: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
     width: 100%;
 }
 
@@ -373,7 +381,7 @@ header.scrolled {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
-    padding: 35px 25px;
+    padding: 40px 30px;
     text-align: center;
     transition: transform var(--transition-speed),
                 background var(--transition-speed);
@@ -385,45 +393,45 @@ header.scrolled {
 }
 
 .service-card i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--accent-color);
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .service-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
     color: var(--white);
 }
 
 .service-card p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .info-highlights {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     background: rgba(212, 175, 55, 0.1);
     border: 1px solid var(--accent-color);
     border-radius: var(--radius-md);
-    padding: 25px;
+    padding: 30px;
     width: 100%;
 }
 
 .highlight-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .highlight-item i {
     color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 /* ========================================
@@ -431,8 +439,8 @@ header.scrolled {
    ======================================== */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
     width: 100%;
 }
 
@@ -453,7 +461,7 @@ header.scrolled {
 }
 
 .menu-img {
-    height: 200px;
+    height: 220px;
     overflow: hidden;
     position: relative;
 }
@@ -470,7 +478,7 @@ header.scrolled {
 }
 
 .menu-content {
-    padding: 25px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -481,12 +489,12 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 10px;
-    gap: 10px;
+    margin-bottom: 12px;
+    gap: 12px;
 }
 
 .menu-header h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--dark-color);
     flex: 1;
 }
@@ -494,34 +502,34 @@ header.scrolled {
 .price {
     font-weight: 600;
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     white-space: nowrap;
 }
 
 .menu-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-light);
 }
 
 .menu-offers {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 18px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .offer-badge {
     background: var(--white);
     border: 1px solid var(--accent-color);
     color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .offer-badge i {
@@ -532,17 +540,18 @@ header.scrolled {
    Section À propos
    ======================================== */
 .about-desc {
-    max-width: 900px;
-    margin: 0 auto 20px auto;
-    font-size: 1.15rem;
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    font-size: 1.2rem;
     color: var(--text-muted);
+    line-height: 1.8;
 }
 
 .about-details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin-top: 60px;
     text-align: left;
     width: 100%;
 }
@@ -551,7 +560,7 @@ header.scrolled {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
-    padding: 30px;
+    padding: 35px;
     transition: transform var(--transition-speed);
 }
 
@@ -560,11 +569,11 @@ header.scrolled {
 }
 
 .about-detail h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .about-detail ul {
@@ -573,11 +582,11 @@ header.scrolled {
 }
 
 .about-detail ul li {
-    padding: 5px 0;
+    padding: 7px 0;
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 1rem;
     position: relative;
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 .about-detail ul li::before {
@@ -593,8 +602,8 @@ header.scrolled {
    ======================================== */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
     width: 100%;
 }
 
@@ -629,15 +638,15 @@ header.scrolled {
    ======================================== */
 .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 35px;
     width: 100%;
 }
 
 .review-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 35px;
+    padding: 40px;
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
@@ -653,29 +662,29 @@ header.scrolled {
 
 .stars {
     color: var(--accent-color);
-    margin-bottom: 18px;
-    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-size: 1.15rem;
 }
 
 .review-text p {
     font-style: italic;
     color: var(--text-muted);
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .review-author {
     font-weight: 600;
     color: var(--accent-color);
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-align: right;
     font-style: normal;
 }
 
 .reviews-cta {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 /* ========================================
@@ -693,26 +702,26 @@ header.scrolled {
 }
 
 .contact-info {
-    padding: 50px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .contact-info h3 {
-    margin-bottom: 25px;
-    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 .contact-info address {
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .contact-info address p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #555;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 .contact-info address a {
@@ -727,46 +736,46 @@ header.scrolled {
 
 .contact-info i {
     color: var(--primary-color);
-    margin-right: 12px;
-    width: 25px;
+    margin-right: 14px;
+    width: 28px;
     text-align: center;
 }
 
 .contact-services {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
 .service-tag {
     background: var(--light-alt);
     color: var(--text-color);
-    padding: 6px 14px;
+    padding: 8px 18px;
     border-radius: 50px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .service-tag i {
     color: var(--primary-color);
     margin-right: 0;
     width: auto;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .map-container-full {
-    min-height: 450px;
+    min-height: 500px;
     width: 100%;
 }
 
 .map-container-full iframe {
     width: 100%;
     height: 100%;
-    min-height: 450px;
+    min-height: 500px;
     border: 0;
 }
 
@@ -777,12 +786,12 @@ footer {
     width: 100%;
     background: var(--dark-color);
     color: var(--white);
-    padding: 40px 5%;
+    padding: 40px 4%;
 }
 
 .footer-container-full {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -830,9 +839,6 @@ footer {
     }
 }
 
-/* ========================================
-   Focus visible pour accessibilité
-   ======================================== */
 :focus-visible {
     outline: 2px solid var(--accent-color);
     outline-offset: 2px;
@@ -843,10 +849,7 @@ footer {
    ======================================== */
 @media (max-width: 1024px) {
     .nav-links {
-        gap: 20px;
-    }
-    .nav-links a {
-        font-size: 0.9rem;
+        gap: 25px;
     }
 }
 
@@ -857,14 +860,18 @@ footer {
 
     .map-container-full,
     .map-container-full iframe {
-        min-height: 350px;
+        min-height: 400px;
     }
 
     .contact-info {
-        padding: 35px;
+        padding: 40px;
     }
 
     .about-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -901,21 +908,17 @@ footer {
         display: none;
     }
 
-    .nav-container-full {
-        justify-content: space-between;
-    }
-
     .hero {
         min-height: 90vh;
         background-attachment: scroll;
     }
 
     .hero-content h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .section-full {
-        padding: 60px 4%;
+        padding: 70px 4%;
     }
 
     .info-highlights {
@@ -927,14 +930,18 @@ footer {
         justify-content: center;
     }
 
-    .reviews-grid {
-        grid-template-columns: 1fr;
-    }
-
     .footer-container-full {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -952,21 +959,8 @@ footer {
         justify-content: center;
     }
 
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-
     .gallery-grid {
         grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        padding: 25px;
-    }
-
-    .contact-buttons .btn-primary {
-        width: 100%;
-        justify-content: center;
     }
 
     .services-grid {
@@ -974,10 +968,10 @@ footer {
     }
 
     .section-full {
-        padding: 50px 4%;
+        padding: 50px 3%;
     }
 
-    .reviews-grid {
-        grid-template-columns: 1fr;
+    .contact-info {
+        padding: 30px;
     }
 }
