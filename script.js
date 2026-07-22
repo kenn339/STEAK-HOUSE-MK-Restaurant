@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.background = 'rgba(26, 26, 26, 0.95)';
-            header.style.boxShadow = '0 4px 10px rgba(0,0,0,0.3)';
+            header.style.background = 'rgba(26, 26, 26, 0.98)';
+            header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.4)';
         } else {
             header.style.background = 'var(--dark-color)';
-            header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
         }
     });
 
-    console.log("Steak House MK Restaurant - Script chargé avec succès !");
+    console.log("Steak House MK Restaurant - Script 100% plein écran chargé avec succès !");
 });
