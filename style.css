@@ -348,11 +348,6 @@ header.scrolled {
 /* ========================================
    Catégories Menu - Titres centrés
    ======================================== */
-.menu-category {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .category-title {
     font-size: 1.8rem;
     color: var(--primary-color);
@@ -360,8 +355,9 @@ header.scrolled {
     margin-top: 70px;
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
-    display: inline-block;
+    display: block;
     text-align: center;
+    width: 100%;
 }
 
 .category-title i {
@@ -442,32 +438,22 @@ header.scrolled {
 }
 
 /* ========================================
-   Grille Menu - Parfaitement centrée
+   Grille Menu Générale
    ======================================== */
 .menu-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 30px;
     width: 100%;
-    justify-content: center;
 }
 
-/* Grille pour 4 éléments (Viandes & Grillades) */
+/* 4 colonnes pour Viandes & Grillades */
 .menu-grid-four {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-/* Grille pour 2 éléments (Burgers, Boissons) */
+/* 2 colonnes élargies pour Burgers et Boissons */
 .menu-grid-two {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .menu-card {
@@ -479,8 +465,7 @@ header.scrolled {
                 box-shadow var(--transition-speed);
     display: flex;
     flex-direction: column;
-    flex: 0 1 400px;
-    max-width: 450px;
+    width: 100%;
 }
 
 .menu-card:hover {
@@ -489,9 +474,13 @@ header.scrolled {
 }
 
 .menu-img {
-    height: 250px;
+    height: 280px;
     overflow: hidden;
     position: relative;
+}
+
+.menu-grid-two .menu-img {
+    height: 350px;
 }
 
 .menu-img img {
@@ -506,25 +495,33 @@ header.scrolled {
 }
 
 .menu-content {
-    padding: 30px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
 }
 
+.menu-grid-two .menu-content {
+    padding: 40px;
+}
+
 .menu-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 12px;
-    gap: 12px;
+    margin-bottom: 15px;
+    gap: 15px;
 }
 
 .menu-header h4 {
     font-size: 1.3rem;
     color: var(--dark-color);
     flex: 1;
+}
+
+.menu-grid-two .menu-header h4 {
+    font-size: 1.6rem;
 }
 
 .price {
@@ -534,9 +531,17 @@ header.scrolled {
     white-space: nowrap;
 }
 
+.menu-grid-two .price {
+    font-size: 1.3rem;
+}
+
 .menu-content p {
     font-size: 0.95rem;
     color: var(--text-light);
+}
+
+.menu-grid-two .menu-content p {
+    font-size: 1.1rem;
 }
 
 .menu-offers {
@@ -895,8 +900,12 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .menu-card {
-        flex: 0 1 350px;
+    .menu-grid-four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid-two .menu-img {
+        height: 300px;
     }
 }
 
@@ -930,8 +939,28 @@ footer {
         padding: 40px;
     }
 
-    .menu-card {
-        flex: 0 1 320px;
+    .menu-grid-four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid-two .menu-img {
+        height: 280px;
+    }
+
+    .menu-grid-two .menu-header h4 {
+        font-size: 1.4rem;
+    }
+
+    .menu-grid-two .price {
+        font-size: 1.2rem;
+    }
+
+    .menu-grid-two .menu-content p {
+        font-size: 1rem;
     }
 }
 
@@ -992,9 +1021,28 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .menu-card {
-        flex: 0 1 300px;
-        max-width: 100%;
+    .menu-grid-four {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-grid-two {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-grid-two .menu-img {
+        height: 280px;
+    }
+
+    .menu-grid-two .menu-header h4 {
+        font-size: 1.3rem;
+    }
+
+    .menu-grid-two .price {
+        font-size: 1.15rem;
+    }
+
+    .menu-grid-two .menu-content p {
+        font-size: 0.95rem;
     }
 
     .info-highlights {
@@ -1033,11 +1081,6 @@ footer {
 
     .gallery-grid {
         grid-template-columns: 1fr;
-    }
-
-    .menu-card {
-        flex: 0 1 100%;
-        max-width: 100%;
     }
 
     .section-full {
