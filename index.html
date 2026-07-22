@@ -33,7 +33,7 @@
             <a href="#accueil" class="logo" aria-label="Steak House MK - Retour à l'accueil">
                 Steak House <span>MK</span>
             </a>
-            <nav role="navigation" aria-label="Navigation principale" class="nav-center">
+            <nav role="navigation" aria-label="Navigation principale" class="nav-right">
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -43,9 +43,6 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/22901020304" target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Réserver une table via WhatsApp">
-                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Réserver
-            </a>
             <button class="menu-toggle" id="mobileMenu" aria-label="Menu de navigation" aria-expanded="false">
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
@@ -60,8 +57,8 @@
                 <p>Découvrez des steaks tendres, juteux et savoureux, grillés à la perfection chez Steak House MK à Abomey-Calavi.</p>
                 <div class="hero-buttons">
                     <a href="#menu" class="btn-primary">Voir notre carte</a>
-                    <a href="https://wa.me/22901020304" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Réserver une table
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Nous trouver
                     </a>
                 </div>
             </div>
@@ -92,7 +89,7 @@
                     <div class="service-card">
                         <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
                         <h3>Réservations acceptées</h3>
-                        <p>Réservez votre table par téléphone ou WhatsApp en toute simplicité.</p>
+                        <p>Réservez votre table par téléphone en toute simplicité.</p>
                     </div>
                 </div>
 
@@ -231,7 +228,7 @@
                 <div class="menu-grid">
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80" alt="Jus de Bissap et Gingembre frais maison glacé" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Jus de Bissap et Gingembre frais maison glacé" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -243,7 +240,7 @@
                     </article>
                     <article class="menu-card">
                         <div class="menu-img">
-                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Cocktail Signature MK aux fruits tropicaux" loading="lazy" width="600" height="400">
+                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80" alt="Cocktail Signature MK aux fruits tropicaux" loading="lazy" width="600" height="400">
                         </div>
                         <div class="menu-content">
                             <div class="menu-header">
@@ -326,11 +323,17 @@
                     <div class="gallery-item">
                         <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnETsACSRX5_tqmlEblBosiC8lsRdyah3jDDICto5NYs5R4LePiCkVdJuh9czIbb4mVlr0tjQkMGsIFGNBDLQ_hKCVPYJMaq9Zif49WIv8E44u9NM0H47AnNcWpLKyabeqQLO2EswHa4jox=w408-h306-k-no" alt="Steak House MK Restaurant - Salle" loading="lazy" width="408" height="306">
                     </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWktdsjXvuRxTHa7Wwxr9lBQI4jpcntSISmUKYOhdBuIwMEFICQiKLMZVlEHD-QU1RDb7Q4BgeHC3wNTrkIEQTVu7t5vNBDb3d3t7H_QUXmjefs7GoAZA4P1yberuZxlb6eloGGQXgmCKaET=w408-h306-k-no" alt="Steak House MK Restaurant - Nouveau plat 1" loading="lazy" width="408" height="306">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkabH77gPImbO_KFq9jKs_ujydaFmZWahcAqCjgF7kv52xAIYeAvDyS-aQdhDyqB5SDaZorF5d2Vigy9cdpBVFVBlVrise-1cLZOkwFRdDuOwVlcdMboPnseBnrRgri-Fp1z00qK_pD4_A=w408-h306-k-no" alt="Steak House MK Restaurant - Nouveau plat 2" loading="lazy" width="408" height="306">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section Avis Clients (avec vrais avis Google) -->
+        <!-- Section Avis Clients -->
         <section id="avis" class="section-full bg-dark-alt" aria-labelledby="reviews-title">
             <div class="content-wrapper">
                 <h2 id="reviews-title" class="section-title text-gold">Avis Clients</h2>
@@ -478,9 +481,8 @@
                     </article>
                 </div>
 
-                <!-- Lien vers tous les avis Google -->
                 <div class="reviews-cta">
-                    <a href="https://www.google.com/maps/place/STEAK+HOUSE+MK+RESTAURANT/@6.4408131,2.3456158,17z" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <a href="https://www.google.com/maps/place/STEAK+HOUSE+MK+RESTAURANT/@6.4408131,2.3456158,20z/data=!4m17!1m8!3m7!1s0x1024a985d9e8b567:0xed75a1e410318105!2sSTEAK+HOUSE+MK+RESTAURANT!8m2!3d6.4408131!4d2.3456158!10e9!16s%2Fg%2F11z2thlb1s!3m7!1s0x1024a985d9e8b567:0xed75a1e410318105!8m2!3d6.4408131!4d2.3456158!9m1!1b1!16s%2Fg%2F11z2thlb1s?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-primary">
                         <i class="fa-brands fa-google" aria-hidden="true"></i> Voir tous les avis sur Google
                     </a>
                 </div>
@@ -491,7 +493,7 @@
         <section id="contact" class="section-full bg-light" aria-labelledby="contact-title">
             <div class="content-wrapper">
                 <h2 id="contact-title" class="section-title">Où nous trouver ?</h2>
-                <p class="section-subtitle">Venez nous rendre visite à Abomey-Calavi ou réservez votre table</p>
+                <p class="section-subtitle">Venez nous rendre visite à Abomey-Calavi ou contactez-nous</p>
 
                 <div class="contact-grid-full">
                     <div class="contact-info">
